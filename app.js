@@ -11,7 +11,7 @@ const mimeTypes = require("./appModules/http-utils/mime-types");
 const mainRoute = require('./routes/main');
 const gamesRouter = require('./routes/games');
 const bodyParser = require('body-parser');
-const cors = require('./middlewares/cors')
+const cors = require('./middlewares/cors');
 
 const PORT = 3005;
 const app = express();
