@@ -61,4 +61,11 @@ const addGameController = async (req, res) => {
     });
 }
 
-module.exports = { sendAllGames, deleteGame, addGameController }
+const sendUpdatedGames = (req, res) => {
+    res.send({
+        games: req.games,
+        updated: req.updatedObject
+    });
+};
+
+module.exports = { sendAllGames, deleteGame, addGameController, sendUpdatedGames }
